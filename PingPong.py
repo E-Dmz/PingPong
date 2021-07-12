@@ -26,5 +26,5 @@ with open(complete_path_to_IDs, "a") as file:
 for status in new_statuses:
     num_mentions +=1
     if ('ping' in status.text) or ('Ping' in status.text) or ('PING' in status.text):
-        status_posted = api.PostUpdate(f'[PingPong 🤖]\n...pong! #{num_mentions}', in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
+        status_posted = api.PostUpdate(f'[PingPong 🤖]\n...pong      #{num_mentions}', in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
         api.PostUpdate(f'🤖 I just answered pong to @{status.user.screen_name}\nhttps://twitter.com/E_Dmz_Bot/status/{status_posted.id_str}', in_reply_to_status_id = 1414607031516999684, auto_populate_reply_metadata = True)
