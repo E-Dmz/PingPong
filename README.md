@@ -31,6 +31,6 @@ Modify `my_package/twitter_key_model.py` with your own keys and save it as `my_p
 
 ```bash
 crontab -e
-# copy * * * * * /path/to/python3 /absolute/path/to/PingPong/PingPong.py
+# copy */15 * * * * /path/to/python3 /absolute/path/to/PingPong/PingPong.py
 # ^S ^X
 ```
