@@ -1,3 +1,2 @@
-my_package/twitter_key.py
-my_package/__pycache__
-.ipynb_checkpoints
+twitter_key.py
+__pycache__
