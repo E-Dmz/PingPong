@@ -1,10 +1,10 @@
 # PingPong
-Just a Twitter bot @my_bot that replies "pong" when you mention @my_bot in a tweet that contains "ping", "Ping" or "PING".
+Just a Twitter bot (let's say: @your_bot) that replies "pong" when someone mentions @your_bot in a tweet that contains "ping", "Ping" or "PING".
 
-You can test it by posting *"ping @E_Dmz_Bot"* on Twitter
+**You can test it by posting *"ping @E_Dmz_Bot"* on Twitter.**
 
 ## Prequisites
-* write and read keys for @my_bot https://developer.twitter.com/en/portal/dashboard 
+* Having write and read keys for @your_bot https://developer.twitter.com/en/portal/dashboard 
 
 * Python 3 with python-twitter library 
 
