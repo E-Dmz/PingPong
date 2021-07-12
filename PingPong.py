@@ -1,6 +1,6 @@
 # start twitter API (you need a twitter_key file)
 import twitter
-from my_package.twitter_key import keys
+from twitter_key import keys
 api = twitter.Api(**keys)
 
 complete_path_to_IDs = '/home/edmz/TwitterBot/PingPong/IDs'
@@ -26,4 +26,5 @@ with open(complete_path_to_IDs, "a") as file:
 for status in new_statuses:
     num_mentions +=1
     if ('ping' in status.text) or ('Ping' in status.text) or ('PING' in status.text):
-        status_posted = api.PostUpdate(f'[PingPong 🤖] pong #{num_mentions} \nThis is an automated reply\nusing #Python #CRON (local)\nCode can be found here: https://github.com/E-Dmz/PingPong', in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
+        status_posted = api.PostUpdate(f'[PingPong 🤖]\n...pong! #{num_mentions}', in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
+        api.PostUpdate(f'🤖 I just answered pong to @{status.user.screen_name}', media = 'https://twitter.com/E_Dmz_Bot/status/1414607031516999684', in_reply_to_status_id = 1414607031516999684, auto_populate_reply_metadata = True)
