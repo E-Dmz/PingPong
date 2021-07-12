@@ -1,7 +1,7 @@
 # PingPong
 Just a Twitter bot @my_bot that replies "pong" when you mention @my_bot in a tweet that contains "ping", "Ping" or "PING".
 
-You can test it: @E_Dmz_Bot on Twitter
+You can test it: tweet "ping @E_Dmz_Bot" on Twitter
 
 ## Prequisites
 * write and read keys for @my_bot https://developer.twitter.com/en/portal/dashboard 
