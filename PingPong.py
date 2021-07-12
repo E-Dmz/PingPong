@@ -26,4 +26,4 @@ with open(complete_path_to_IDs, "a") as file:
 for status in new_statuses:
     num_mentions +=1
     if ('ping' in status.text) or ('Ping' in status.text) or ('PING' in status.text):
-        status_posted = api.PostUpdate(f'[🤖] pong #{num_mentions}', in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
+        status_posted = api.PostUpdate(f'[PingPong 🤖] pong #{num_mentions} \nThis is an automated reply\nusing #Python #CRON (local)\nCode can be found here: https://github.com/E-Dmz/PingPong', in_reply_to_status_id = status.id, auto_populate_reply_metadata = True)
