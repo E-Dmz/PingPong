@@ -22,7 +22,7 @@ git clone https://github.com/E-Dmz/PingPong.git
 ```
 
 ### 2. Manage your keys
-Modify `twitter_keys_model.py` with your own keys and save it as `twitter_keys.py`.
+Modify `keys_template.py` with your own keys and save it as `keys.py`.
 
 ### 3. Change absolute path in PingPong.py
 Modify `complete_path_to_IDs` from `'/home/edmz/TwitterBot/PingPong/IDs'` `'/your/absolute/path/to/PingPong/IDs'`

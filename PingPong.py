@@ -1,6 +1,6 @@
 # start twitter API (you need a twitter_key file)
 import twitter
-from twitter_key import keys
+from keys import keys
 api = twitter.Api(**keys)
 
 complete_path_to_IDs = '/home/edmz/TwitterBot/PingPong/IDs'
